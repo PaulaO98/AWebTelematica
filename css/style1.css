@@ -1,0 +1,960 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.paginamujer {
+  margin-top: 150px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+footer {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 25rem;
+  height: auto;
+  padding: 1rem;
+  float: left;
+}
+
+.contenedormovil {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.menumain {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background: rgba(8, 8, 8, 0.9);
+  display: none;
+}
+
+.menumain a {
+  display: block;
+  color: rgb(255, 255, 255);
+  height: 5rem;
+  text-decoration: none;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.333);
+}
+
+.menumain a:hover {
+  background: rgba(243, 243, 243, 0.25);
+}
+
+.menu-button {
+  float: right;
+  font-size: 2.5rem;
+  margin: 1.2rem 0;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.icon-menu {
+  width: 150px;
+  height: auto;
+}
+
+.contenedorDesktop {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resp {
+  width: 100%;
+}
+
+/* . */
+
+header.contenedormovil {
+  display: table;
+}
+
+header.contenedorDesktop {
+  display: table;
+}
+
+/*SLIDER*/
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.s1 {
+  width: 100%;
+  max-height: 500px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #5656566b;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slideimg {
+  padding: 2rem;
+}
+
+/* quienes somos */
+
+.ser {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.quienes {
+  height: auto;
+  max-width: 500px;
+  text-align: justify;
+}
+
+h1 {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.imgser {
+  height: auto;
+  max-width: 500px;
+  border-radius: 5px 5px 0 0;
+}
+.s1 {
+  height: auto;
+  width: 100%;
+}
+
+.prendasme {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.p {
+  height: auto;
+  width: 300px;
+}
+
+.vermas {
+  text-decoration: none;
+  color: white;
+  background: black;
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.prendas {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 1.5rem;
+}
+
+.prendas:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.esp {
+  padding: 2px 16px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact {
+  color: black;
+  margin: auto;
+  padding: 3rem;
+}
+
+.redes {
+  margin: auto;
+  padding: 3rem;
+}
+
+.mediosp {
+  margin: auto;
+  padding: 3rem;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.icon-phone {
+  padding: 1rem;
+}
+.icon-facebook {
+  font-size: 1.9rem;
+  padding-right: 1rem;
+}
+.icon-instagram {
+  font-size: 1.9rem;
+}
+
+.icon-paypal {
+  padding: 0.5rem;
+  font-size: 1.9rem;
+}
+.icon-visa {
+  padding: 0.5rem;
+  font-size: 1.9rem;
+}
+.icon-credit {
+  padding: 0.5rem;
+  font-size: 1.9rem;
+}
+.icon-dollar {
+  padding: 0.5rem;
+  font-size: 1.9rem;
+}
+
+/* PAGINA MUJER */
+.subm {
+  position: fixed;
+  position: table;
+  margin-top: 10px;
+  top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.submujer {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.linkmujer {
+  text-decoration: none;
+  color: black;
+}
+
+.linksm {
+  display: flex;
+  gap: 3rem;
+}
+
+.linksm a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.linksm a:hover {
+  background: rgba(54, 54, 54, 0.1);
+}
+
+.subm1 {
+  font-size: 1.5rem;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Tamaño pantallas*/
+
+@media screen and (min-width: 768px) {
+  .contenedormovil {
+    display: none;
+  }
+  .quienes {
+    max-width: 350px;
+  }
+  .imgser {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contenedorDesktop {
+    display: none;
+  }
+
+  .linksm a {
+    font-size: 1rem;
+  }
+
+  .linksm {
+    gap: 0.5rem;
+  }
+
+  .subm1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imgser {
+    max-width: 500px;
+  }
+}
+
+/* PÁGINA INVENTARIO */
+
+.seleccion {
+  display: flex;
+  gap: 28rem;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem;
+}
+
+.tabla {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 6rem;
+}
+
+/* NAVEGADOR USADO EN PANTALLA GRANDE */
+
+ul,
+ol {
+  list-style: none;
+}
+.submenu li a {
+  display: flex;
+  text-decoration: none;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  padding: 2rem;
+  
+}
+
+.submenu li a:hover {
+  background: rgb(187, 186, 186);
+}
+
+.submenu {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.linksnavp {
+  margin-right: 0.5rem;
+  height: auto;
+}
+.submenu li ul {
+  display: none;
+  position: absolute;
+  min-width: 115px;
+}
+.submenu li:hover > ul {
+  display: block;
+}
+
+.submenu li ul li{
+  position: relative;
+}
+.submenu li ul li ul{
+  top: 0%;
+  right: -115px;
+}
+
+.prendamu{
+  display: flex;
+  align-items: center; 
+  /* justify-content: center; */
+}
+.imgprenmu{
+  width: 60%;
+  height: auto;
+  box-shadow:  8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 1.5rem;
+}
+
+.textprendamu{
+text-align: center;
+
+}
+.tm1{
+  margin: 3rem;
+}
+
+.msg{
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  background: rgb(162, 159, 159);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 1rem;
+}
+/* PÁGINA INVENTARIO */
+
+.seleccion {
+  display: flex;
+  gap: 28rem;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem;
+}
+
+.tabla {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 6rem;
+}
+
+/* NAVEGADOR USADO EN PANTALLA GRANDE */
+
+ul,
+ol {
+  list-style: none;
+}
+.submenu li a {
+  display: flex;
+  text-decoration: none;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  padding: 2rem;
+  
+}
+
+.submenu li a:hover {
+  background: rgb(187, 186, 186);
+}
+
+.submenu {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.linksnavp {
+  margin-right: 0.5rem;
+  height: auto;
+}
+.submenu li ul {
+  display: none;
+  position: absolute;
+  min-width: 115px;
+}
+.submenu li:hover > ul {
+  display: block;
+}
+
+.submenu li ul li{
+  position: relative;
+}
+.submenu li ul li ul{
+  top: 0%;
+  right: -115px;
+}
+
+.prendamu{
+  display: flex;
+  align-items: center; 
+  /* justify-content: center; */
+}
+.imgprenmu{
+  width: 60%;
+  height: auto;
+  box-shadow:  8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 1.5rem;
+}
+
+.textprendamu{
+text-align: center;
+
+}
+.tm1{
+  margin: 3rem;
+}
+
+.msg{
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  background: rgb(162, 159, 159);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 1rem;
+}
+/* PÁGINA LOGIN REGISTRO */
+.Form-title{
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  background: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-top: 0rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: rgba(192, 192, 192, 0.705);
+  justify-content: space-evenly;
+  display: flex;
+}
+.Form-title1{
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  background: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: rgba(192, 192, 192, 0.705);
+  justify-content: space-evenly;
+  display: flex;
+  }
+.Form-description{
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  display: flex;
+}
+.Form-description1{
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  display: flex;
+}
+.ControlInput{
+  width: 30%;
+  color: rgb(0, 0, 0);
+  background-color: rgba(192, 192, 192, 0.486);
+  border-radius: 20px;
+  padding: 1px;
+  font-family: inherit;
+  font-size: 2em;
+  margin-top: 2rem;
+  display: flex;
+  margin-left: 35%;
+  border-color: rgba(192, 192, 192, 0.486);
+}
+.ControlInput1{
+  width: 30%;
+  color: rgba(0, 0, 0);
+  background-color: rgba(192, 192, 192, 0.486);
+  border-radius: 20px;
+  padding: 1px;
+  font-family: inherit;
+  font-size: 2em;
+  margin-top: 2rem;
+  display: flex;
+  margin-left: 35%;
+  border-color: rgba(192, 192, 192, 0.486);
+}
+.Control-label{
+  width: 30%;
+  border-width: 2px;
+  border-style: transparent;
+  padding: 1px;
+  outline: 1;
+  font-family: inherit;
+  font-size: 2em;
+  margin-top: 3rem;
+  }
+.login {
+  width: 4.5%;
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 0, 0);
+  margin-left: 47%;
+  padding: 1rem;
+  margin-top: 0.6rem;
+  border-radius: 10px;
+  font-size: 15px;
+  display: flex;
+  }
+.registrate {
+  width: 8%;
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 0, 0);
+  margin-left: 46%;
+  padding: 1rem;
+  margin-top: 0.6rem;
+  border-radius: 10px;
+  font-size: 15px;
+  display: flex;
+  margin-bottom: 1%;
+  }
+  /* PÁGINA PAGO*/
+  .box {
+    display: flex;
+  }
+  .Form-title2{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    margin-left: 90%;
+    padding: 3px;
+    display: flex;
+  }
+  .Form-title3{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    margin-left: 100%;
+    padding: 3px;
+    display: flex;
+  }
+  .Form-title4{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 45px;
+  }
+  .Form-title5{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 20px;
+    margin-top: 0rem;
+    margin-left: 35%;
+    margin: 6%;
+  }
+  ul {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    margin-top: 3rem;
+    margin-left: 50%;
+    font-family: "Roboto", sans-serif;
+  }
+  .menu{
+    width: 110%;
+    color: rgba(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.486);
+    border-radius: 5px;
+    padding: 20px;
+    font-family: inherit;
+    font-size: 2em;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    border-color: rgba(192, 192, 192, 0.486);
+  }
+  .ipago{
+    width: 110%;
+    color: rgba(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 2%;
+    margin-left: 30%;
+  }
+  .verticalLine {
+    border-left: thick solid #7e7e7e;
+    margin-left: 28%;
+  }
+  .box1 {
+    display: flex;
+  }
+  .ControlInput3{
+    width: 45%;
+    color: rgba(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.486);
+    border-radius: 20px;
+    padding: 0.5px;
+    font-family: inherit;
+    font-size: 2em;
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 55%;
+    border-color: rgba(192, 192, 192, 0.486);
+  }
+  .pagar{
+    width: 15%;
+    text-decoration: none;
+    color: white;
+    background: rgb(0, 0, 0);
+    margin-left: 70%;
+    display: flex;
+    padding: 2rem;
+    margin-top: 0.6rem;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center; 
+    }
+  .Form-description3{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    width: 30%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    margin-left: 55%;
+  }
+  .caja { 
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #000000; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background:  rgb(194, 189, 255);
+    margin-left: 30em;
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px rgba(118, 108, 255, 0.486);
+  }
+  .Form-title6{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    margin-top: 0rem;
+    margin-left: 90%;
+    margin: 6%;
+  }
+  .box3 {
+    display: flex;
+  }
+
+  /* PÁGINA DATOS ENVIO Y PAGO*/
+  .box2 {
+    display: flex;
+  }
+  .ControlInput4{
+    width: 150%;
+    color: rgba(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.486);
+    border-radius: 20px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 2em;
+    margin-top: 0rem;
+    display: flex;
+    margin-left: 25%;
+    border-color: rgba(192, 192, 192, 0.486);
+  }
+  .Form-description4{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    width: 30%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    margin-left: 25%;
+    padding: 5px;
+  }
+  .ControlInput5{
+    width: 150%;
+    color: rgba(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.486);
+    border-radius: 20px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 2em;
+    margin-top: 2rem;
+    display: flex;
+    margin-left: 25%;
+    border-color: rgba(192, 192, 192, 0.486);
+  }
+  .Form-description5{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    margin-left: 25%;
+    padding: 5px;
+  }
+  .verticalLine1 {
+    border-left: #7e7e7eaf;
+    margin-left: 3%;
+    size: 1cm;
+  }
+  .Control-label3{
+    width: 30%;
+    border-width: 2px;
+    border-style: transparent;
+    padding: 1px;
+    outline: 1;
+    font-family: inherit;
+    font-size: 2em;
+    margin-top: 3rem;
+    }
+    .pagar1{
+    width: 45%;
+    text-decoration: none;
+    color: white;
+    background: rgb(0, 0, 0);
+    margin-left: 65%;
+    display: flex;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center; 
+    }
