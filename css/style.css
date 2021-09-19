@@ -451,7 +451,8 @@ ol {
 }
 .submenu li ul li ul {
   top: 0%;
-  right: -115px;
+  right: -140px;
+
 }
 
 .prendamu {
@@ -570,7 +571,8 @@ td {
 }
 
 th {
-  background: #eee;
+  background: rgb(7, 7, 7);
+  color: rgb(255, 255, 255);
 }
 
 .textadmin {

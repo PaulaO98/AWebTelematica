@@ -28,31 +28,31 @@
                 <div class="menumain" id="menum">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menulink" aria-current="page" href="index.html">
+                            <a class="menulink" aria-current="page" href="index.php">
                                 <span class="icon-home"></span>
                                 HOME
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="categorias.html">
+                            <a class="menulink" href="categorias.php">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="mispedidos.html">
+                            <a class="menulink" href="mispedidos.php">
                                 <span class="icon-clipboard"></span>
                                 MIS PEDIDOS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="carrocompras.html">
+                            <a class="menulink" href="carrocompras.php">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.html">
+                            <a class="menulink" href="loginregistro.php">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
@@ -77,23 +77,23 @@
                             <ul>
                                 <li><a href="mujer.html">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.html">BLUSAS</a></li>
-                                        <li><a href="mujer.html">PRENDAS INFERIORES</a></li>
-                                        <li><a href="mujer.html">CALZADO</a></li>
-                                        <li><a href="mujer.html">VESTIDOS</a></li>
+                                        <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
+                                        <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=3">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
                                     </ul>                                
                                 </li>
                                 <li><a href="hombre.html">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.html">CAMISAS</a></li>
-                                        <li><a href="hombre.html">CALZADO</a></li>
-                                        <li><a href="hombre.html">PRENDAS INFERIORES</a></li>                                        
+                                        <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
+                                        <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php?idcategoria=7">PRENDA INFERIOR HOMBRE</a></li>                                        
                                     </ul>                                
                                 </li>                                
                             </ul>
                         </li>
                         <li>
-                            <a href="mispedidos.html" class="linksnav">
+                            <a href="mispedidos.php" class="linksnav">
                                 <span class="icon-clipboard"></span>
                                 <span class="linksnavp">MIS</span>
                                 <span class="linksnavp">PEDIDOS</span>
@@ -101,13 +101,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="carrocompras.html" class="linksnav">
+                            <a href="carrocompras.php" class="linksnav">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.html" class="linksnav">
+                            <a href="loginregistro.php" class="linksnav">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
