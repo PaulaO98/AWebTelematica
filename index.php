@@ -17,7 +17,7 @@
     <header>
         <nav>
             <div class="contenedormovil">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
@@ -63,19 +63,19 @@
 
             <div class="contenedorDesktop">
                 <div class="resp">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
                     <ul class="submenu">
                         <li>
-                            <a href="index.html" class="linksnav">
+                            <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>    
                             <ul>
-                                <li><a href="mujer.html">MUJER</a>
+                                <li><a href="mujer.php">MUJER</a>
                                     <ul>
                                         <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
                                         <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
@@ -83,7 +83,7 @@
                                         <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
                                     </ul>                                
                                 </li>
-                                <li><a href="hombre.html">HOMBRE</a>
+                                <li><a href="hombre.php">HOMBRE</a>
                                     <ul>
                                         <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
                                         <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
@@ -158,7 +158,7 @@
                 <div class="esp">
                     <h3>Zapato Café</h3>
                     <P class="textp">Unidades: </P>
-                    <p><a href="hombre.html" class="vermas">VER MÁS</a></p>
+                    <p><a href="hombre.php" class="vermas">VER MÁS</a></p>
                 </div>
             </div>
             <div class="prendas">
@@ -166,7 +166,7 @@
                 <div class="esp">
                     <h3>Jeans</h3>
                     <P class="textp">Unidades: </P>
-                    <p></p><a href="mujer.html" class="vermas">VER MÁS</a></p>
+                    <p></p><a href="mujer.php" class="vermas">VER MÁS</a></p>
                 </div>
             </div>
             <div class="prendas">
@@ -174,7 +174,7 @@
                 <div class="esp">
                     <h3>Blusa Rosa</h3>
                     <P class="textp">Unidades: </P>
-                    <p><a href="mujer.html" class="vermas">VER MÁS</a></p>
+                    <p><a href="mujer.php" class="vermas">VER MÁS</a></p>
                 </div>
             </div>          
             <div class="prendas">
@@ -182,7 +182,7 @@
                 <div class="esp">
                     <h3>Tennis Negros</h3>
                     <P class="textp">Unidades: </P>
-                    <p><a href="mujer.html" class="vermas">VER MÁS</a></p>
+                    <p><a href="mujer.php" class="vermas">VER MÁS</a></p>
                 </div>
 
             </div>

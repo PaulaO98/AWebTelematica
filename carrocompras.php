@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap');
     </style>
 
     <link rel="stylesheet" href="css/fontello.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Style.css" />
 </head>
 
 <body>
-
-    <header class="paginageneral">
+<header>
         <nav>
             <div class="contenedormovil">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
@@ -29,31 +28,31 @@
                 <div class="menumain" id="menum">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menulink" aria-current="page" href="index.html">
+                            <a class="menulink" aria-current="page" href="index.php">
                                 <span class="icon-home"></span>
                                 HOME
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="categorias.html">
+                            <a class="menulink" href="categorias.php">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="mispedidos.html">
+                            <a class="menulink" href="mispedidos.php">
                                 <span class="icon-clipboard"></span>
                                 MIS PEDIDOS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="carrocompras.html">
+                            <a class="menulink" href="carrocompras.php">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.html">
+                            <a class="menulink" href="loginregistro.php">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
@@ -64,37 +63,37 @@
 
             <div class="contenedorDesktop">
                 <div class="resp">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
                     <ul class="submenu">
                         <li>
-                            <a href="index.html" class="linksnav">
+                            <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>    
                             <ul>
-                                <li><a href="mujer.html">MUJER</a>
+                                <li><a href="mujer.php">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.html">BLUSAS</a></li>
-                                        <li><a href="mujer.html">PRENDAS INFERIORES</a></li>
-                                        <li><a href="mujer.html">CALZADO</a></li>
-                                        <li><a href="mujer.html">VESTIDOS</a></li>
+                                        <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
+                                        <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=3">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
                                     </ul>                                
                                 </li>
-                                <li><a href="hombre.html">HOMBRE</a>
+                                <li><a href="hombre.php">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.html">CAMISAS</a></li>
-                                        <li><a href="hombre.html">CALZADO</a></li>
-                                        <li><a href="hombre.html">PRENDAS INFERIORES</a></li>                                        
+                                        <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
+                                        <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php?idcategoria=7">PRENDA INFERIOR HOMBRE</a></li>                                        
                                     </ul>                                
                                 </li>                                
                             </ul>
                         </li>
                         <li>
-                            <a href="mispedidos.html" class="linksnav">
+                            <a href="mispedidos.php" class="linksnav">
                                 <span class="icon-clipboard"></span>
                                 <span class="linksnavp">MIS</span>
                                 <span class="linksnavp">PEDIDOS</span>
@@ -102,13 +101,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="carrocompras.html" class="linksnav">
+                            <a href="carrocompras.php" class="linksnav">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.html" class="linksnav">
+                            <a href="loginregistro.php" class="linksnav">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
@@ -118,44 +117,28 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="subm">
-            <a href="mujer.html" class="linkgeneral">
-                <P class="submujer">MUJER</P>
-            </a>
-            <div class="linksm">
-                <a href="vestidos.html" class="linkgeneral">
-                    <p class="subm1">Vestidos</p>
-                </a>
-                <a href="blusas.html" class="linkgeneral">
-                    <p class="subm1">Blusas</p>
-                </a>
-                <a href="prendainferior.html" class="linkgeneral">
-                    <p class="subm1">Prenda Inferior</p>
-                </a>
-                <a href="calzado.html" class="linkgeneral">
-                    <p class="subm1">Calzado</p>
-                </a>
-            </div>
+
+    <main class="mainlogin">
+
+   
+    <div  >
+        <h1 class="titlepre1">CARRITO DE COMPRAS</h1>    
+    </div>
+
+
+
+        <div class="tabla">
+            <table border="1px" >
+                <tr><th>REF PRODUCTO</th><th>  NOMBRE PRODUCTO  </th><th>  CANTIDAD  </th><th>  VALOR UNITARIO  </th><th> VALOR TOTAL  </th><th>AÑADIR</th> <th>ELIMINAR</th></tr>
+                <tr><th align="center">12675</th><td>Leggins Negros</td><td>2</td><td>35000</td><td>70000</td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
+                <tr><th align="center">28965</th><td>Tennis Rose</td><td>1</td><td>125000</td><td>125000</td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
+            </table> 
         </div>
-        <div class="prendamu">
-            <div class="prendamumain">
-                <img src="Images/taconarojo.jpg" class="imgprenmu" />
-            </div>
-            <div class="textprendamu">
-                <h1><b>TACONES ROJO</b></h1>
-                <div class="tm1">
-                    <p><b>STOCK : </b></p>
-                    <p><b>PRECIO : </b></p>
-                    <p><b>TALLA : </b></p>
-                    <p></p>
-                    <p><a href="" class="vermas">AÑADIR</a></p>
-                </div>
-                <div>
-                </div>
-                <p> <a href="" class="msg"><span class="icon-truck"></span>DESPACHO GRATUITO </a></p>
-            </div>
-        </div>
+
+    <div  >
+        <h2> <b>TOTAL COMPRA: $ 195.000</b> </h2> 
+          
+    </div>
     </main>
 
     <footer>
@@ -164,6 +147,7 @@
                 <h2>Contáctanos</h2>
                 <p><span class="icon-phone"></span>3122046328</p>
                 <p><span class="icon-phone"></span>3122046328</p>
+
             </div>
 
             <div class="redes">

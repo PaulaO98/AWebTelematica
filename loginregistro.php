@@ -10,49 +10,51 @@
     </style>
 
     <link rel="stylesheet" href="css/fontello.css" />
-    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <header class="paginamujer">
+    <header class="pagina mujer">
         <nav>
             <div class="contenedormovil">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
-                <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="icon-menu"></span>
                 </button>
                 <div class="menumain" id="menum">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menulink" aria-current="page" href="index.html">
+                            <a class="menulink" aria-current="page" href="index.php">
                                 <span class="icon-home"></span>
                                 HOME
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="categorias.html">
+                            <a class="menulink" href="categorias.php">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="mispedidos.html">
+                            <a class="menulink" href="mispedidos.php">
                                 <span class="icon-clipboard"></span>
                                 MIS PEDIDOS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="carrocompras.html">
+                            <a class="menulink" href="carrocompras.php">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.html">
+                            <a class="menulink" href="loginregistro.php">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
@@ -62,70 +64,60 @@
             </div>
 
             <div class="contenedorDesktop">
-
                 <div class="resp">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
-
-
                 <div class="linksnavmain">
-
                     <ul class="submenu">
                         <li>
-                            <a href="index.html" class="linksnav">
+                            <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
-                            </a>
+                            </a>    
                             <ul>
-                                <li><a href="mujer.html">MUJER</a>
+                                <li><a href="mujer.php">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.html">BLUSAS</a></li>
-                                        <li><a href="mujer.html">CALZADO</a></li>
-                                    </ul>
-
+                                        <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
+                                        <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=3">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
+                                    </ul>                                
                                 </li>
-                                <li><a href="hombre.html">HOMBRE</a>
+                                <li><a href="hombre.php">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.html">CAMISAS</a></li>
-                                        <li><a href="hombre.html">CALZADO</a></li>
-                                    </ul>
-
-                                </li>
-
+                                        <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
+                                        <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php?idcategoria=7">PRENDA INFERIOR HOMBRE</a></li>                                        
+                                    </ul>                                
+                                </li>                                
                             </ul>
-
                         </li>
                         <li>
-                            <a href="mispedidos.html" class="linksnav">
+                            <a href="mispedidos.php" class="linksnav">
                                 <span class="icon-clipboard"></span>
                                 <span class="linksnavp">MIS</span>
                                 <span class="linksnavp">PEDIDOS</span>
-
+        
                             </a>
                         </li>
                         <li>
-                            <a href="carrocompras.html" class="linksnav">
+                            <a href="carrocompras.php" class="linksnav">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.html" class="linksnav">
+                            <a href="loginregistro.php" class="linksnav">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
-                        </li>
-
-                    </ul>
-
+                        </li>                                                                           
+                    </ul>                
                 </div>
-
             </div>
-
         </nav>
-
     </header>
 
     <main>
@@ -190,7 +182,6 @@
                     </form>
 
                 </div>
-
 
             </div>
 
