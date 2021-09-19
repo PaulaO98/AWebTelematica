@@ -14,7 +14,7 @@
 
     $sql = "insert into users (name, phone, address, password, email) values ('$name', '$phone', '$address', '$password','$email')";
     $result = mysqli_query($con, $sql);
-    header("Location: loginregisro.php");
-?>
+    header("Location: loginregistro.php");
+?>  
 
 

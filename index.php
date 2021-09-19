@@ -60,9 +60,37 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.php">
+                            <a class="menulink" href=
+                            <?php 
+                            
+                            if(isset($_COOKIE["name"])){
+
+                                echo "logout.php";
+                            }
+
+                            else{
+
+                                echo "loginregistro.php";
+
+                            }
+        
+                            
+                            ?> >
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
+                                
                             </a>
                         </li>
                     </ul>
@@ -115,9 +143,37 @@
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.php" class="linksnav">
+                            <a href=<?php 
+                            
+                            if(isset($_COOKIE["name"])){
+
+                                echo "logout.php";
+                            }
+
+                            else{
+
+                                echo "loginregistro.php";
+
+                            }
+        
+                            
+                            ?> 
+                            
+                            class="linksnav">
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+                                
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
                             </a>
                         </li>                                                                           
                     </ul>                
