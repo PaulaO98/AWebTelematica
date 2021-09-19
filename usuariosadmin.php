@@ -67,44 +67,84 @@
                     </a>
                 </div>
                 <div class="linksnavmain">
-                                  
-                            <a href="index.html"class="linksnav">
-                                <span class="icon-user"></span> 
-                                ADMIN
-                                <span  class="icon-salir"></span> 
-                            </a>                                                                                                                                  
+
+                    <a href="index.html" class="linksnav">
+                        <span class="icon-user"></span>
+                        ADMIN
+                        <span class="icon-salir"></span>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="subm">            
-                <a href="admin.html" class="linkgeneral">
-                    <P class="submujer">ADMIN</P>
+
+    <?php include("conexion.php"); ?>
+        <div class="subm">
+            <a href="admin.html" class="linkgeneral">
+                <P class="submujer">ADMIN</P>
+            </a>
+            <div class="linksm ">
+                <a href="inventarioadmin.html" class="linkgeneral">
+                    <p class="subm1">Pedidos</p>
                 </a>
-                <div class="linksm ">
-                    <a href="inventarioadmin.html" class="linkgeneral">
-                        <p class="subm1">Inventario</p>    
-                    </a>
-                    <a href="usuariosadmin.html" class="linkgeneral active">
-                        <p class="subm1">Usuarios</p>
-                    </a>
-                </div>
+                <a href="inventarioadmin.html" class="linkgeneral">
+                    <p class="subm1">Inventario</p>
+                </a>
+                <a href="usuariosadmin.html" class="linkgeneral active">
+                    <p class="subm1">Usuarios</p>
+                </a>
+            </div>
         </div>
         <div class="tabla">
-            <table border="1px" >
-                <tr><th>ID</th><th>  USUARIO  </th><th>  DOCUMENTO  </th><th>  PEDIDO SI/NO  </th><th>  ESTADO  </th><th>EDIT</th> <th>DELETE</th></tr>
-                <tr><th align="center">1</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-                <tr><th align="center">2</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-                <tr><th align="center">3</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-                <tr><th align="center">4</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-                <tr><th align="center">5</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-                <tr><th align="center">6</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-                <tr><th align="center">7</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-                <tr><th align="center">8</th><td></td><td></td><td></td><td></td><td><span class="icon-edit"></span></td><td><span class="icon-trash"></span></td></tr>
-            </table> 
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col"> NOMBRE USUARIO </th>
+                        <th scope="col"> TELEFONO </th>
+                        <th scope="col"> DIRECCIÓN </th>
+                        <th scope="col">EMAIL</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="lista">
+                    <?php
+                /* Se realiza la consulta adecuada */
+                $result = mysqli_query($link, "SELECT * FROM users");
+                $num=mysqli_num_rows($result);
+                for ($i=0; $i<$num; $i++){
+                    $row = mysqli_fetch_assoc($result); 
+                    ?>
+                    <tr>
+                        <th scope="row">
+                            <?php echo $row['id_usuario'];?>
+                        </th>
+                        <td>
+                            <?php echo $row['name'];?>
+                        </td>
+                        <th scope="row">
+                            <?php echo $row['phone'];?>
+                        </th>
+                        <td>
+                            <?php echo $row['address'];?>
+                        </td>
+                        <th scope="row">
+                            <?php echo $row['email'];?>
+                        </th>
+
+                    </tr>
+                    <?php 
+                }  
+                    ?>
+                </tbody>
+
+            </table>
+
         </div>
-    </div>
+        </div>
     </main>
 
     <footer>

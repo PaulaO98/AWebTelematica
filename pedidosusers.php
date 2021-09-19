@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header class="paginageneral">
         <nav>
             <div class="contenedormovil">
@@ -61,7 +60,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="contenedorDesktop">
                 <div class="resp">
                     <a href="index.html">
@@ -69,93 +67,47 @@
                     </a>
                 </div>
                 <div class="linksnavmain">
-                    <ul class="submenu">
-                        <li>
-                            <a href="index.html" class="linksnav">
-                                <span class="icon-t-shirt"></span>
-                                CATEGORÍAS
-                            </a>    
-                            <ul>
-                                <li><a href="mujer.html">MUJER</a>
-                                    <ul>
-                                        <li><a href="mujer.html">BLUSAS</a></li>
-                                        <li><a href="mujer.html">PRENDAS INFERIORES</a></li>
-                                        <li><a href="mujer.html">CALZADO</a></li>
-                                        <li><a href="mujer.html">VESTIDOS</a></li>
-                                    </ul>                                
-                                </li>
-                                <li><a href="hombre.html">HOMBRE</a>
-                                    <ul>
-                                        <li><a href="hombre.html">CAMISAS</a></li>
-                                        <li><a href="hombre.html">CALZADO</a></li>
-                                        <li><a href="hombre.html">PRENDAS INFERIORES</a></li>                                        
-                                    </ul>                                
-                                </li>                                
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="mispedidos.html" class="linksnav">
-                                <span class="icon-clipboard"></span>
-                                <span class="linksnavp">MIS</span>
-                                <span class="linksnavp">PEDIDOS</span>
-        
-                            </a>
-                        </li>
-                        <li>
-                            <a href="carrocompras.html" class="linksnav">
-                                <span class="icon-carro"></span>
-                                COMPRAR
-                            </a>
-                        </li>
-                        <li>
-                            <a href="loginregistro.html" class="linksnav">
-                                <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
-                            </a>
-                        </li>                                                                           
-                    </ul>                
+                                  
+                            <a href="index.html"class="linksnav">
+                                <span class="icon-user"></span> 
+                                ADMIN
+                                <span  class="icon-salir"></span> 
+                            </a>                                                                                                                                  
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="subm">
-            <a href="mujer.html" class="linkgeneral">
-                <P class="submujer">MUJER</P>
-            </a>
-            <div class="linksm">
-                <a href="vestidos.html" class="linkgeneral">
-                    <p class="subm1">Vestidos</p>
+        <div class="subm">            
+                <a href="admin.html" class="linkgeneral">
+                    <P class="submujer">ADMIN</P>
                 </a>
-                <a href="blusas.html" class="linkgeneral">
-                    <p class="subm1">Blusas</p>
-                </a>
-                <a href="prendainferior.html" class="linkgeneral">
-                    <p class="subm1">Prenda Inferior</p>
-                </a>
-                <a href="calzado.html" class="linkgeneral">
-                    <p class="subm1">Calzado</p>
-                </a>
-            </div>
-        </div>
-        <div class="prendamu">
-            <div class="prendamumain">
-                <img src="Images/taconarojo.jpg" class="imgprenmu" />
-            </div>
-            <div class="textprendamu">
-                <h1><b>TACONES ROJO</b></h1>
-                <div class="tm1">
-                    <p><b>STOCK : </b></p>
-                    <p><b>PRECIO : </b></p>
-                    <p><b>TALLA : </b></p>
-                    <p></p>
-                    <p><a href="" class="vermas">AÑADIR</a></p>
+                <div class="linksm ">
+                    <a href="inventarioadmin.html" class="linkgeneral active">
+                        <p class="subm1">Pedidos</p>    
+                    </a>
+                    <a href="inventarioadmin.html" class="linkgeneral">
+                        <p class="subm1">Inventario</p>    
+                    </a>
+                    <a href="usuariosadmin.html" class="linkgeneral">
+                        <p class="subm1">Usuarios</p>
+                    </a>
                 </div>
-                <div>
-                </div>
-                <p> <a href="" class="msg"><span class="icon-truck"></span>DESPACHO GRATUITO </a></p>
-            </div>
         </div>
+        <div class="tabla">
+            <table border="1px" >
+                <tr><th>ID PEDIDO</th><th>  NOMBRE USUARIO  </th><th> ESTADO </th></tr>
+                <tr><td align="center">1</td><td></td><td></td></tr>
+                <tr><td align="center">2</td><td></td><td></td></tr>
+                <tr><td align="center">3</td><td></td><td></td></tr>
+                <tr><td align="center">4</td><td></td><td></td></tr>
+                <tr><td align="center">5</td><td></td><td></td></tr>
+                <tr><td align="center">6</td><td></td><td></td></tr>
+                <tr><td align="center">7</td><td></td><td></td></tr>
+                <tr><td align="center">8</td><td></td><td></td></tr>
+            </table> 
+        </div>
+    </div>
     </main>
 
     <footer>
@@ -165,14 +117,12 @@
                 <p><span class="icon-phone"></span>3122046328</p>
                 <p><span class="icon-phone"></span>3122046328</p>
             </div>
-
             <div class="redes">
                 <h2>Redes Sociales</h2>
                 <span class="icon-facebook"></span>
                 <span class="icon-instagram"></span>
                 <span class="icon-twitter"></span>
             </div>
-
             <div class="mediosp">
                 <h2>Medios de Pago</h2>
                 <span class="icon-paypal"></span>
@@ -180,7 +130,6 @@
                 <span class="icon-credit"></span>
                 <span class="icon-dollar"></span>
             </div>
-
         </div>
     </footer>
 

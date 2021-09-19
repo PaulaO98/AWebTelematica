@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <header class="paginageneral">
+
+    <header  class="paginageneral">
         <nav>
             <div class="contenedormovil">
                 <a href="index.html">
@@ -62,43 +63,38 @@
             </div>
 
             <div class="contenedorDesktop">
-
                 <div class="resp">
                     <a href="index.html">
                         <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
-
-
                 <div class="linksnavmain">
-
                     <ul class="submenu">
                         <li>
                             <a href="index.html" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
-                            </a>
+                            </a>    
                             <ul>
                                 <li><a href="mujer.html">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.html">BLUSAS</a></li>
-                                        <li><a href="mujer.html">CALZADO</a></li>
-                                    </ul>
-                                
+                                        <li><a href="mujer.php">BLUSAS</a></li>
+                                        <li><a href="mujer.php">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php">VESTIDOS</a></li>
+                                    </ul>                                
                                 </li>
                                 <li><a href="hombre.html">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.html">CAMISAS</a></li>
-                                        <li><a href="hombre.html">CALZADO</a></li>
-                                    </ul>
-                                
-                                </li>
-                                
+                                        <li><a href="hombre.php">CAMISAS</a></li>
+                                        <li><a href="hombre.php">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php">PRENDA INFERIOR HOMBRE</a></li>                                        
+                                    </ul>                                
+                                </li>                                
                             </ul>
-
                         </li>
                         <li>
-                            <a href="mispedidos.html" class="linksnav">
+                            <a href="mispedidos.php" class="linksnav">
                                 <span class="icon-clipboard"></span>
                                 <span class="linksnavp">MIS</span>
                                 <span class="linksnavp">PEDIDOS</span>
@@ -106,93 +102,74 @@
                             </a>
                         </li>
                         <li>
-                            <a href="carrocompras.html" class="linksnav">
+                            <a href="carrocompras.php" class="linksnav">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.html" class="linksnav">
+                            <a href="loginregistro.php" class="linksnav">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
-                        </li>
-                                                                           
-                    </ul>                   
-
+                        </li>                                                                           
+                    </ul>                
                 </div>
-
             </div>
-
         </nav>
-
     </header>
     <main>
         <div class="subm">            
-                <a href="mujer.html" class="linkgeneral">
-                    <P class="submujer">MUJER</P>
+                <a href="hombre.html" class="linkgeneral">
+                    <P class="submujer">HOMBRE</P>
                 </a>
                 <div class="linksm">
-                    <a href="vestidos.html" class="linkgeneral">
-                        <p class="subm1">Vestidos</p>    
+                    <a href="camisash.html" class="linkgeneral">
+                        <p class="subm1">Camisas</p>    
                     </a>
-                    <a href="blusas.html" class="linkgeneral">
-                        <p class="subm1">Blusas</p>
-                    </a>
-                    <a href="prendainferior.html" class="linkgeneral">
+                    <a href="prendainferiorh.html" class="linkgeneral">
                         <p class="subm1">Prenda Inferior</p>
                     </a>
-                    <a href="calzado.html" class="linkgeneral">
+                    <a href="calzadoh.html" class="linkgeneral">
                         <p class="subm1">Calzado</p>
                     </a>
                 </div>
         </div>
-
-
         <div class="prendasme">
             <div class="prendas">
-                <img src="Images/taconarojo.jpg" class="p" />
+                <img src="Images/zapatosca.jpg" class="p" />
                 <div class="esp">
-                    <h3>Tacones Rojos</h3>
+                    <h3>Camisa cuadros</h3>
                     <P class="textp">Unidades: </P>
-                    <p><a href="prendamujer.html" class="vermas">VER MÁS</a></p>
+                    <p><a href="prendahombre.html" class="vermas">VER MÁS</a></p>
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/blusarosa.jpg" class="p" />
+                <img src="Images/tennisverdes.jpg" class="p" />
                 <div class="esp">
-                    <h3>Blusa Rosa</h3>
+                    <h3>Tennis Verdes</h3>
+                    <P class="textp">Unidades:</P>
+                    <p><a href="prendahombre.html" class="vermas">VER MÁS</a></p>
+                </div>
+            </div>            
+            <div class="prendas">
+                <img src="Images/jeans.jpg" class="p" />
+                <div class="esp">
+                    <h3>vestido</h3>
                     <P class="textp">Unidades: </P>
-                    <p><a href="prendamujer.html" class="vermas">VER MÁS</a></p>
+                    <p></p><a href="prendahombre.html" class="vermas">VER MÁS</a></p>
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/taconamarillo.jpg" class="p" />
+                <img src="Images/camisagrise.jpg" class="p" />
                 <div class="esp">
-                    <h3>Tacones Amarillos</h3>
+                    <h3>zapatos</h3>
                     <P class="textp">Unidades: </P>
-                    <p></p><a href="prendamujer.html" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="Images/vestidorojo.jpg" class="p" />
-                <div class="esp">
-                    <h3>Vestido Rojo</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendamujer.html" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="Images/tennisstar.jpg" class="p" />
-                <div class="esp">
-                    <h3>Tennis Converse</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendamujer.html" class="vermas">VER MÁS</a></p>
+                    <p><a href="prendahombre.html" class="vermas">VER MÁS</a></p>
                 </div>
             </div>
         </div>
     </main>
-
     <footer>
         <div class="footer">
             <div class="contact">
