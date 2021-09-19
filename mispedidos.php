@@ -20,14 +20,14 @@
     </style>
 
     <link rel="stylesheet" href="css/fontello.css" />
-    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header class="paginamujer">
+<header class="paginageneral">
         <nav>
             <div class="contenedormovil">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
@@ -38,7 +38,7 @@
                 <div class="menumain" id="menum">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menulink" aria-current="page" href="index.html">
+                            <a class="menulink" aria-current="page" href="index.php">
                                 <span class="icon-home"></span>
                                 HOME
                             </a>
@@ -50,19 +50,19 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="mispedidos.html">
+                            <a class="menulink" href="mispedidos.php">
                                 <span class="icon-clipboard"></span>
                                 MIS PEDIDOS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="carrocompras.html">
+                            <a class="menulink" href="carrocompras.php">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.html">
+                            <a class="menulink" href="loginregistro.php">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
@@ -72,43 +72,38 @@
             </div>
 
             <div class="contenedorDesktop">
-
                 <div class="resp">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
-
-
                 <div class="linksnavmain">
-
                     <ul class="submenu">
                         <li>
-                            <a href="index.html" class="linksnav">
+                            <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
-                            </a>
+                            </a>    
                             <ul>
-                                <li><a href="mujer.html">MUJER</a>
+                                <li><a href="mujer.php">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.html">BLUSAS</a></li>
-                                        <li><a href="mujer.html">CALZADO</a></li>
-                                    </ul>
-                                
+                                        <li><a href="mujer.php">BLUSAS</a></li>
+                                        <li><a href="mujer.php">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php">VESTIDOS</a></li>
+                                    </ul>                                
                                 </li>
                                 <li><a href="hombre.html">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.html">CAMISAS</a></li>
-                                        <li><a href="hombre.html">CALZADO</a></li>
-                                    </ul>
-                                
-                                </li>
-                                
+                                        <li><a href="hombre.php">CAMISAS</a></li>
+                                        <li><a href="hombre.php">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php">PRENDA INFERIOR HOMBRE</a></li>                                        
+                                    </ul>                                
+                                </li>                                
                             </ul>
-
                         </li>
                         <li>
-                            <a href="mispedidos.html" class="linksnav">
+                            <a href="mispedidos.php" class="linksnav">
                                 <span class="icon-clipboard"></span>
                                 <span class="linksnavp">MIS</span>
                                 <span class="linksnavp">PEDIDOS</span>
@@ -116,26 +111,21 @@
                             </a>
                         </li>
                         <li>
-                            <a href="carrocompras.html" class="linksnav">
+                            <a href="carrocompras.php" class="linksnav">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.html" class="linksnav">
+                            <a href="loginregistro.php" class="linksnav">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
-                        </li>
-                                                                           
-                    </ul>                   
-
+                        </li>                                                                           
+                    </ul>                
                 </div>
-
             </div>
-
         </nav>
-
     </header>
 
     <main>
@@ -199,7 +189,7 @@
     </div>
      
     <div align="right"> 
-    <a class="button" href="index.html" >
+    <a class="button" href="index.php" >
     
         <span class="icon-t-shirt" ></span>
         salir

@@ -16,3 +16,5 @@
     $result = mysqli_query($con, $sql);
     header("Location: loginregisro.php");
 ?>
+
+

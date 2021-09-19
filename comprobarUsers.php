@@ -1,5 +1,4 @@
 <?php
-
     session_start();
 
     include("conexion.php");
@@ -22,9 +21,6 @@
         $names[]=$data['name'];
     }
 
-    // print_r($passwords);
-    // print_r($names);
-
     foreach ($passwords as $pass) {
         # code...
         foreach ($emails as $key => $mail) {
@@ -40,7 +36,7 @@
                 $stmt->close();
                 $con->next_result();
 
-                return header("Location: index.html");
+                return header("Location: index.php");
 
             }
             

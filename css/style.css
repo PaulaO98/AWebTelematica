@@ -16,12 +16,18 @@ header {
 
 main {
   width: 100%;
-  height: auto;
+  height: auto;   
+  margin-top: 10rem;
+  /* display: flex; */
+  flex-wrap: wrap;
+
 }
 footer {
   width: 100%;
   height: auto;
-  position: static;
+  flex-wrap: wrap;
+  display: flex;
+
 }
 
 .logo {
@@ -614,4 +620,8 @@ th {
   text-decoration: none;
   padding: 1.5rem;
   display: flex;
+}
+
+.paginamujer {
+  margin-top: 150px;
 }

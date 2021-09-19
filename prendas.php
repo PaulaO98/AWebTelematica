@@ -1,7 +1,5 @@
-<!-- Páginas Manuel  Mis pedidos - Usuarios Admin - Pago -->
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,14 +10,14 @@
     </style>
 
     <link rel="stylesheet" href="css/fontello.css" />
-    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header class="paginamujer">
+    <header class="paginageneral">
         <nav>
             <div class="contenedormovil">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
@@ -30,31 +28,31 @@
                 <div class="menumain" id="menum">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menulink" aria-current="page" href="index.html">
+                            <a class="menulink" aria-current="page" href="index.php">
                                 <span class="icon-home"></span>
                                 HOME
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="categorias.html">
+                            <a class="menulink" href="categorias.php">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="mispedidos.html">
+                            <a class="menulink" href="mispedidos.php">
                                 <span class="icon-clipboard"></span>
                                 MIS PEDIDOS
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="carrocompras.html">
+                            <a class="menulink" href="carrocompras.php">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.html">
+                            <a class="menulink" href="loginregistro.php">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
@@ -66,7 +64,7 @@
             <div class="contenedorDesktop">
 
                 <div class="resp">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
@@ -76,22 +74,22 @@
 
                     <ul class="submenu">
                         <li>
-                            <a href="index.html" class="linksnav">
+                            <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>
                             <ul>
-                                <li><a href="mujer.html">MUJER</a>
+                                <li><a href="mujer.php">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.html">BLUSAS</a></li>
-                                        <li><a href="mujer.html">CALZADO</a></li>
+                                        <li><a href="mujer.php">BLUSAS</a></li>
+                                        <li><a href="mujer.php">CALZADO</a></li>
                                     </ul>
                                 
                                 </li>
-                                <li><a href="hombre.html">HOMBRE</a>
+                                <li><a href="hombre.php">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.html">CAMISAS</a></li>
-                                        <li><a href="hombre.html">CALZADO</a></li>
+                                        <li><a href="hombre.php">CAMISAS</a></li>
+                                        <li><a href="hombre.php">CALZADO</a></li>
                                     </ul>
                                 
                                 </li>
@@ -100,7 +98,7 @@
 
                         </li>
                         <li>
-                            <a href="mispedidos.html" class="linksnav">
+                            <a href="mispedidos.php" class="linksnav">
                                 <span class="icon-clipboard"></span>
                                 <span class="linksnavp">MIS</span>
                                 <span class="linksnavp">PEDIDOS</span>
@@ -108,13 +106,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="carrocompras.html" class="linksnav">
+                            <a href="carrocompras.php" class="linksnav">
                                 <span class="icon-carro"></span>
                                 COMPRAR
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.html" class="linksnav">
+                            <a href="loginregistro.php" class="linksnav">
                                 <span class="icon-user1"></span>
                                 LOGIN/REGISTRO
                             </a>
@@ -129,74 +127,46 @@
         </nav>
 
     </header>
-
     <main>
-        <div class="subm">
-        <h1>PRODUCTOS</h1>
-    </div>
-    
 
-    <HR size="5" width="100%" align="center">
-                         
-    <h2>Camisa polo</h2>
-    <img src="Images/polo.jpeg"class="p" align="left"><h2>CAMISA DE HOMBRE Referencia A1 Talla L Color Blanco</h2> 
-    <section class="container">
-
-        <div class="item"><input type="number"></div>
-        <div class="item"></div>
-        <div class="item"align="right" ><h1>$18.000 COP</h1></div>
-                     
-    </section>
-            
-    <br clear="left">    
-    </div>
-
-    <div class="prendas">
-    <h2>vestido largo</h2>
-    <img src="Images/modelo.jpg"class="p" align="left"><h2>VESTIDO LARGO MUJER Referencia A2 Talla M Color Verde </h2>
-    <section class="container">
-
-        <div class="item">	<input type="number"></div>
-        <div class="item"></div>
-        <div class="item"align="right" ><h1>$55.000 COP</h1></div>
+        <div class="prendamu">
+            <div class="prendamumain">
+                <img src="Images/ch1.jpg" class="imgprenmu" />
+            </div>
+            <div class="textprendamu">
+                <h1><b>TACONES ROJO</b></h1>
+                <div class="tm1">
+                    <p><b>STOCK : </b></p>
+                    <p><b>PRECIO : </b></p>
+                    <p><b>TALLA : </b></p>
+                    <p></p>
+                    <p><a href="" class="vermas">AÑADIR</a></p>
+                </div>
+               
+                <div>
                     
+                </div>
                 
-    </section>
-    <br clear="left">
-    </div>
-           
-    <div class="prendas">
-        <section class="container">
-    
-            <div class="item"><h1>TOTAL DE PRODUCTOS = 2</h1></div>
-            <div class="item"></div>
-            <div class="item"align="right" ><h1> $ 73.000 COP</h1></div>
-                
-        </section>
-     
-    <div align="right"> 
-    <a class="button" href="index.html" >
-    
-        <span class="icon-t-shirt" ></span>
-        IR A PAGAR
-    </a>
-    </div>
-    </div>
-    </main>
+                <p>
+                    
+                    <a href="#" class="msg"><span class="icon-mail"></span>DESPACHO GRATUITO</p>
+            </div>
+        </div>
 
+    </main>
     <footer>
         <div class="footer">
             <div class="contact">
                 <h2>Contáctanos</h2>
                 <p><span class="icon-phone"></span>3122046328</p>
                 <p><span class="icon-phone"></span>3122046328</p>
-
             </div>
 
             <div class="redes">
                 <h2>Redes Sociales</h2>
                 <span class="icon-facebook"></span>
                 <span class="icon-instagram"></span>
+                <span class="icon-twitter"></span>
             </div>
 
             <div class="mediosp">
@@ -213,4 +183,4 @@
     <script src="app.js"></script>
 </body>
 
-</html>
+</php>
