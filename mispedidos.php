@@ -1,5 +1,13 @@
  <!-- Páginas Manuel  Mis pedidos - Usuarios Admin - Pago -->
 
+<?php
+
+    if(!isset($_COOKIE["Token"]))
+    header("Location: login-register.php");
+    
+?>
+
+
  <!DOCTYPE html>
 <html lang="en">
 
