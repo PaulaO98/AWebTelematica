@@ -172,19 +172,56 @@
            
     <div class="prendas">
                 
-    <section class="conta">
+    <table >
+                <thead>
+                    <tr>
+                        <th scope="col">ID PEDIDO</th>
+                        <th scope="col"> FECHA</th>
+                        <th scope="col"> VALOR TOTAL PEDIDO </th>
+                        <th scope="col"> DIRECCIÓN </th>
+                        <th scope="col">EMAIL</th>
 
-        <div class="item"><img style="width:100px; height:100px;" src="images/circulo2.PNG" alt="Descripción de la imagen" /></div>
-        <div  class="item" ><div align="center"> <img style=  "width:100px; height:100px;"  src="images/circulo2.PNG" alt="Descripción de la imagen" /></div></div>
-        <div class="item"><div align="right"><img style="width:100px; height:100px;" src="images/circulo1.PNG" alt="Descripción de la imagen"/></div></div>
-        <div class="item"align="left" ><h1>CONFIRMACION PEDIDO</h1></div>
-        <div class="item"align="left" ><h1>EN CAMINO</h1></div>
-        <div class="item" ><div align="right"><h1>ENTREGADO</h1></div></div>
-                    
-        <HR size="5" width="100%" align="center">
-            <HR size="5" width="100%" align="center">
-                <HR size="5" width="100%" align="center">          
-    </section>
+                    </tr>
+
+                </thead>
+
+                <tbody id="lista">
+                <?php
+
+                include("conexion.php");
+                /* Se realiza la consulta adecuada */
+                $result = mysqli_query($con, "SELECT * FROM users");
+                $num=mysqli_num_rows($result);
+                for ($i=0; $i<$num; $i++){
+                    $row = mysqli_fetch_assoc($result); 
+                    ?>
+                    <tr>
+                        <th scope="row">
+                            <?php echo $row['id_usuario'];?>
+                        </th>
+                        <td>
+                            <?php echo $row['name'];?>
+                        </td>
+                        <th scope="row">
+                            <?php echo $row['phone'];?>
+                        </th>
+                        <td>
+                            <?php echo $row['address'];?>
+                        </td>
+                        <th scope="row">
+                            <?php echo $row['email'];?>
+                        </th>
+
+                    </tr>
+                    <?php 
+                }  
+                    ?>
+                </tbody>
+
+            </table>
+
+
+
                 
     </div>
      
