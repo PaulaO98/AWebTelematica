@@ -28,7 +28,7 @@
         <nav>
             <div class="contenedormovil">
                 <a href="index.php">
-                    <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                    <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -74,7 +74,7 @@
             <div class="contenedorDesktop">
                 <div class="resp">
                     <a href="index.php">
-                        <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                        <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
@@ -144,7 +144,7 @@
     <HR size="5" width="100%" align="center">
                          
     <h2>Camisa polo</h2>
-    <img src="Images/polo.jpeg"class="p" align="left"><h2>CAMISA DE HOMBRE Referencia A1 Talla L Color Blanco</h2> 
+    <img src="images/polo.jpeg"class="p" align="left"><h2>CAMISA DE HOMBRE Referencia A1 Talla L Color Blanco</h2> 
     <section class="container">
 
         <div class="item"><h2>Cantidad = 1</h2></div>
@@ -158,7 +158,7 @@
 
     <div class="prendas">
     <h2>vestido largo</h2>
-    <img src="Images/modelo.jpg"class="p" align="left"><h2>VESTIDO LARGO MUJER Referencia A2 Talla M Color Verde </h2>
+    <img src="images/modelo.jpg"class="p" align="left"><h2>VESTIDO LARGO MUJER Referencia A2 Talla M Color Verde </h2>
     <section class="container">
 
         <div class="item"><h2>Cantidad = 1</h2></div>
@@ -174,9 +174,9 @@
                 
     <section class="conta">
 
-        <div class="item"><img style="width:100px; height:100px;" src="Images/circulo2.PNG" alt="Descripción de la imagen" /></div>
-        <div  class="item" ><div align="center"> <img style=  "width:100px; height:100px;"  src="Images/circulo2.PNG" alt="Descripción de la imagen" /></div></div>
-        <div class="item"><div align="right"><img style="width:100px; height:100px;" src="Images/circulo1.PNG" alt="Descripción de la imagen"/></div></div>
+        <div class="item"><img style="width:100px; height:100px;" src="images/circulo2.PNG" alt="Descripción de la imagen" /></div>
+        <div  class="item" ><div align="center"> <img style=  "width:100px; height:100px;"  src="images/circulo2.PNG" alt="Descripción de la imagen" /></div></div>
+        <div class="item"><div align="right"><img style="width:100px; height:100px;" src="images/circulo1.PNG" alt="Descripción de la imagen"/></div></div>
         <div class="item"align="left" ><h1>CONFIRMACION PEDIDO</h1></div>
         <div class="item"align="left" ><h1>EN CAMINO</h1></div>
         <div class="item" ><div align="right"><h1>ENTREGADO</h1></div></div>

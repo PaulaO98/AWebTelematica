@@ -26,7 +26,7 @@
         <nav>
             <div class="contenedormovil">
                 <a href="index.php">
-                    <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                    <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -72,7 +72,7 @@
             <div class="contenedorDesktop">
                 <div class="resp">
                     <a href="index.php">
-                        <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                        <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
@@ -130,15 +130,15 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="Images/fondo1.jpg" class="s1" />
+                <img src="images/fondo1.jpg" class="s1" />
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="Images/fondo2.jpg" class="s1" />                
+                <img src="images/fondo2.jpg" class="s1" />                
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="Images/fondo3.jpg" class="s1" />
+                <img src="images/fondo3.jpg" class="s1" />
             </div>
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -157,12 +157,12 @@
                     Trabajamos a diario por tener exito y cumplir cada una de las metas, una empresa llena de motivación, valores y compromiso total con nuestros clientes.</P>
             </div>
             <div class="imgser">
-                <img src="Images/ser.jpeg" class="s1" />
+                <img src="images/ser.jpeg" class="s1" />
             </div>            
         </div>
         <div class="prendasme">
             <div class="prendas">
-                <img src="Images/zapatosca.jpg" class="p"/>
+                <img src="images/zapatosca.jpg" class="p"/>
                 <div class="esp">
                     <h3>Zapato Café</h3>
                     <P class="textp">Unidades: </P>
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/jeans.jpg" class="p" />
+                <img src="images/jeans.jpg" class="p" />
                 <div class="esp">
                     <h3>Jeans</h3>
                     <P class="textp">Unidades: </P>
@@ -178,7 +178,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/blusarosa.jpg" class="p" />
+                <img src="images/blusarosa.jpg" class="p" />
                 <div class="esp">
                     <h3>Blusa Rosa</h3>
                     <P class="textp">Unidades: </P>
@@ -186,7 +186,7 @@
                 </div>
             </div>          
             <div class="prendas">
-                <img src="Images/tillanegra.jpg" class="p" />
+                <img src="images/tillanegra.jpg" class="p" />
                 <div class="esp">
                     <h3>Tennis Negros</h3>
                     <P class="textp">Unidades: </P>

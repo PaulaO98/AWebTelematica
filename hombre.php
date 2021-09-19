@@ -19,7 +19,7 @@
         <nav>
             <div class="contenedormovil">
                 <a href="index.php">
-                    <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                    <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -65,7 +65,7 @@
             <div class="contenedorDesktop">
                 <div class="resp">
                     <a href="index.php">
-                        <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                        <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
@@ -137,7 +137,7 @@
         </div>
         <div class="prendasme">
             <div class="prendas">
-                <img src="Images/ch1.jpg" class="p" />
+                <img src="images/ch1.jpg" class="p" />
                 <div class="esp">
                     <h3>Camisa cuadros</h3>
                     <P class="textp">Unidades: </P>
@@ -145,7 +145,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/ch4.jpg" class="p" />
+                <img src="images/ch4.jpg" class="p" />
                 <div class="esp">
                     <h3>Tennis Verdes</h3>
                     <P class="textp">Unidades:</P>
@@ -153,7 +153,7 @@
                 </div>
             </div>            
             <div class="prendas">
-                <img src="Images/jeans.jpg" class="p" />
+                <img src="images/jeans.jpg" class="p" />
                 <div class="esp">
                     <h3>vestido</h3>
                     <P class="textp">Unidades: </P>
@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/camisagrise.jpg" class="p" />
+                <img src="images/camisagrise.jpg" class="p" />
                 <div class="esp">
                     <h3>zapatos</h3>
                     <P class="textp">Unidades: </P>

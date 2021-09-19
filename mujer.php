@@ -20,7 +20,7 @@
         <nav>
             <div class="contenedormovil">
                 <a href="index.php">
-                    <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                    <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -66,7 +66,7 @@
             <div class="contenedorDesktop">
                 <div class="resp">
                     <a href="index.php">
-                        <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                        <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
@@ -143,7 +143,7 @@
 
         <div class="prendasme">
             <div class="prendas">
-                <img src="Images/cm3.jpg" class="p" />
+                <img src="images/cm3.jpg" class="p" />
                 <div class="esp">
                     <h3>Tacones Rojos</h3>
                     <P class="textp">Unidades: </P>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/b1.jpg" class="p" />
+                <img src="images/b1.jpg" class="p" />
                 <div class="esp">
                     <h3>Blusa Rosa</h3>
                     <P class="textp">Unidades: </P>
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/cm4.jpg" class="p" />
+                <img src="images/cm4.jpg" class="p" />
                 <div class="esp">
                     <h3>Tacones Amarillos</h3>
                     <P class="textp">Unidades: </P>
@@ -167,7 +167,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/v1.jpg" class="p" />
+                <img src="images/v1.jpg" class="p" />
                 <div class="esp">
                     <h3>Vestido Rojo</h3>
                     <P class="textp">Unidades: </P>
@@ -175,7 +175,7 @@
                 </div>
             </div>
             <div class="prendas">
-                <img src="Images/cm6.jpg" class="p" />
+                <img src="images/cm6.jpg" class="p" />
                 <div class="esp">
                     <h3>Tennis Converse</h3>
                     <P class="textp">Unidades: </P>

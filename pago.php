@@ -18,7 +18,7 @@
         <nav>
             <div class="contenedormovil">
                 <a href="index.html">
-                    <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                    <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -65,7 +65,7 @@
 
                 <div class="resp">
                     <a href="index.html">
-                        <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                        <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
 
@@ -159,7 +159,7 @@
                 
             </ul>
             
-            <img src="Images/pago.jpg" class="ipago">
+            <img src="images/pago.jpg" class="ipago">
             </div>
 
             <div>
@@ -168,7 +168,7 @@
                     
                     <pre class="caja"><h3 class="Form-title14">RESUMEN DE COMPRA:</h3>
             <div class="box1">
-            <img src="Images/zapatoscafe.jpg" class="ipago1">    
+            <img src="images/zapatoscafe.jpg" class="ipago1">    
             <pre>
     Zapatos hombre
     Color Café

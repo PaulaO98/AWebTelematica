@@ -26,7 +26,7 @@
         <nav>
             <div class="contenedormovil">
                 <a href="index.php">
-                    <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                    <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <div class="linksnavmain" style="display:flex;justify-content:end">
 
@@ -42,7 +42,7 @@
             <div class="contenedorDesktop">
                 <div class="resp">
                     <a href="index.php">
-                        <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
+                        <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
