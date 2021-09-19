@@ -1,6 +1,5 @@
 <?php
 
-
 include("conexion.php");
 
 $name = $_POST['name'];
@@ -10,9 +9,6 @@ $cantidad = $_POST['cantidad'];
 $id_categoria = $_POST['id_categoria'];
 
 $imagename = $_FILES['imagen']['name'];
-
-// print_r($imagename);
-// print_r($id_categoria);
 
 $validatextension = array("jpg", "jpeg", "png");
 
@@ -48,17 +44,3 @@ if (in_array($extension, $validatextension)) {
     echo "Extension no valida, Volver a Intentar";
 }
         
-
-
-// $name=$_POST['name'];
-
-// $phone=$_POST['phone'];
-// $address=$_POST['address'];
-// $email=$_POST['email'];
-// $password=$_POST['password'];
-
-/* Se realiza la consulta adecuada */
-
-// $sql = "insert into users (name, phone, address, password, email) values ('$name', '$phone', '$address', '$password','$email')";
-// $result = mysqli_query($con, $sql);
-// header("Location: loginregisro.php");

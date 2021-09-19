@@ -15,7 +15,6 @@
 
 <body>
 
-
     <header class="paginageneral">
         <nav>
             <div class="contenedormovil">
@@ -54,9 +53,23 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.php">
+                            <a class="menulink" href=<?php if(isset($_COOKIE["name"])){ echo "logout.php" ; } else{
+                                echo "loginregistro.php" ; } ?> >
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
+
                             </a>
                         </li>
                     </ul>
@@ -72,24 +85,24 @@
                 <div class="linksnavmain">
                     <ul class="submenu">
                         <li>
-                            <a href="mujer.php" class="linksnav">
+                            <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>    
                             <ul>
-                                <li><a href="mujer.php">MUJER</a>
+                                <li><a href="#">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.php">BLUSAS</a></li>
-                                        <li><a href="mujer.php">PRENDA INFERIOR MUJER</a></li>
-                                        <li><a href="mujer.php">CALZADO MUJER</a></li>
-                                        <li><a href="mujer.php">VESTIDOS</a></li>
+                                        <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
+                                        <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=3">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
                                     </ul>                                
                                 </li>
-                                <li><a href="hombre.php">HOMBRE</a>
+                                <li><a href="#">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.php">CAMISAS</a></li>
-                                        <li><a href="hombre.php">CALZADO HOMBRE</a></li>
-                                        <li><a href="hombre.php">PRENDA INFERIOR HOMBRE</a></li>                                        
+                                        <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
+                                        <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php?idcategoria=7">PRENDA INFERIOR HOMBRE</a></li>                                        
                                     </ul>                                
                                 </li>                                
                             </ul>
@@ -109,9 +122,37 @@
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.php" class="linksnav">
+                            <a href=<?php 
+                            
+                            if(isset($_COOKIE["name"])){
+
+                                echo "logout.php";
+                            }
+
+                            else{
+
+                                echo "loginregistro.php";
+
+                            }
+        
+                            
+                            ?> 
+                            
+                            class="linksnav">
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+                                
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
                             </a>
                         </li>                                                                           
                     </ul>                
@@ -120,68 +161,56 @@
         </nav>
     </header>
     <main>
-        <div class="subm">            
-                <a href="mujer.php" class="linkgeneral">
-                    <P class="submujer">MUJER</P>
+        <div class="subm">
+            <a href="#" class="linkgeneral">
+                <P class="submujer">MUJER</P>
+            </a>
+            <div class="linksm">
+                <a href="mujer.php?idcategoria=4" class="linkgeneral">
+                    <p class="subm1">Vestidos</p>
                 </a>
-                <div class="linksm">
-                    <a href="mujer.php" class="linkgeneral">
-                        <p class="subm1">Vestidos</p>    
-                    </a>
-                    <a href="mujer.php" class="linkgeneral">
-                        <p class="subm1">Blusas</p>
-                    </a>
-                    <a href="mujer.php" class="linkgeneral">
-                        <p class="subm1">Prenda Inferior</p>
-                    </a>
-                    <a href="mujer.php" class="linkgeneral">
-                        <p class="subm1">Calzado</p>
-                    </a>
-                </div>
+                <a href="mujer.php?idcategoria=1" class="linkgeneral">
+                    <p class="subm1">Blusas</p>
+                </a>
+                <a href="mujer.php?idcategoria=2" class="linkgeneral">
+                    <p class="subm1">Prenda Inferior</p>
+                </a>
+                <a href="mujer.php?idcategoria=3" class="linkgeneral">
+                    <p class="subm1">Calzado</p>
+                </a>
+            </div>
         </div>
 
 
         <div class="prendasme">
+
+            <?php
+
+                $id_categoria=$_GET['idcategoria'];
+                include("conexion.php");
+                /* Se realiza la consulta adecuada */
+                $result = mysqli_query($con, "SELECT id_product,products.name,price,size,quantity,image,categorias.name as categoria from products
+                inner join categorias on products.categoria_id_categoria=categorias.id_categoria where categoria_id_categoria='$id_categoria'");
+
+                $num = mysqli_num_rows($result);
+                for ($i = 0; $i < $num; $i++) {
+                    $row = mysqli_fetch_assoc($result);
+            ?>
+
             <div class="prendas">
-                <img src="images/cm3.jpg" class="p" />
+                <img src="images/<?php echo $row['image']?>" class="p" />
                 <div class="esp">
-                    <h3>Tacones Rojos</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendas.php" class="vermas">VER MÁS</a></p>
+                    <h3><?php echo $row['name']?></h3>
+                    <P class="textp">Unidades: <?php echo $row['quantity']?></P>
+                    <p><a href="prendas.php?id_product=<?php echo $row['id_product']?>" class="vermas">VER MÁS</a></p>
                 </div>
             </div>
-            <div class="prendas">
-                <img src="images/b1.jpg" class="p" />
-                <div class="esp">
-                    <h3>Blusa Rosa</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="images/cm4.jpg" class="p" />
-                <div class="esp">
-                    <h3>Tacones Amarillos</h3>
-                    <P class="textp">Unidades: </P>
-                    <p></p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="images/v1.jpg" class="p" />
-                <div class="esp">
-                    <h3>Vestido Rojo</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="images/cm6.jpg" class="p" />
-                <div class="esp">
-                    <h3>Tennis Converse</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
+
+            <?php
+            }
+            ?>
+
+
         </div>
     </main>
 

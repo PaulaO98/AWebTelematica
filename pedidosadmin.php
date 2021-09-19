@@ -60,7 +60,7 @@
 
     
         <div class="subm">
-            <a href="admin.html" class="linkgeneral">
+            <a href="#" class="linkgeneral">
                 <P class="submujer">ADMIN</P>
             </a>
             <div class="linksm ">

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="paginageneral">
+<header class="paginageneral">
         <nav>
             <div class="contenedormovil">
                 <a href="index.php">
@@ -52,9 +52,23 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menulink" href="loginregistro.php">
+                            <a class="menulink" href=<?php if(isset($_COOKIE["name"])){ echo "logout.php" ; } else{
+                                echo "loginregistro.php" ; } ?> >
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
+
                             </a>
                         </li>
                     </ul>
@@ -62,40 +76,35 @@
             </div>
 
             <div class="contenedorDesktop">
-
                 <div class="resp">
                     <a href="index.php">
                         <img src="images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
-
-
                 <div class="linksnavmain">
-
                     <ul class="submenu">
                         <li>
                             <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
-                            </a>
+                            </a>    
                             <ul>
-                                <li><a href="mujer.php">MUJER</a>
+                                <li><a href="#">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.php">BLUSAS</a></li>
-                                        <li><a href="mujer.php">CALZADO</a></li>
-                                    </ul>
-                                
+                                        <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
+                                        <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=3">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
+                                    </ul>                                
                                 </li>
-                                <li><a href="hombre.php">HOMBRE</a>
+                                <li><a href="#">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.php">CAMISAS</a></li>
-                                        <li><a href="hombre.php">CALZADO</a></li>
-                                    </ul>
-                                
-                                </li>
-                                
+                                        <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
+                                        <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php?idcategoria=7">PRENDA INFERIOR HOMBRE</a></li>                                        
+                                    </ul>                                
+                                </li>                                
                             </ul>
-
                         </li>
                         <li>
                             <a href="mispedidos.php" class="linksnav">
@@ -112,35 +121,72 @@
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.php" class="linksnav">
+                            <a href=<?php 
+                            
+                            if(isset($_COOKIE["name"])){
+
+                                echo "logout.php";
+                            }
+
+                            else{
+
+                                echo "loginregistro.php";
+
+                            }
+        
+                            
+                            ?> 
+                            
+                            class="linksnav">
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+                                
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
                             </a>
-                        </li>
-                                                                           
-                    </ul>                   
-
+                        </li>                                                                           
+                    </ul>                
                 </div>
-
             </div>
-
         </nav>
-
     </header>
     <main>
 
         <div class="prendamu">
+
+        <?php
+
+            $id_producto=$_GET['id_product'];
+            include("conexion.php");
+            /* Se realiza la consulta adecuada */
+            $result = mysqli_query($con, "SELECT id_product,products.name,price,size,quantity,image,categorias.name as categoria from products
+            inner join categorias on products.categoria_id_categoria=categorias.id_categoria where id_product='$id_producto'");
+
+            $num = mysqli_num_rows($result);
+            for ($i = 0; $i < $num; $i++) {
+                $row = mysqli_fetch_assoc($result);
+            ?>
+
             <div class="prendamumain">
-                <img src="images/ch1.jpg" class="imgprenmu" />
+                <img src="images/<?php echo $row['image']?>" class="imgprenmu" />
             </div>
             <div class="textprendamu">
-                <h1><b>TACONES ROJO</b></h1>
+                <h1><b><?php echo $row['name']?></b></h1>
                 <div class="tm1">
-                    <p><b>STOCK : </b></p>
-                    <p><b>PRECIO : </b></p>
-                    <p><b>TALLA : </b></p>
+                    <p><b>STOCK : <?php echo $row['quantity']?></b></p>
+                    <p><b>PRECIO : <?php echo $row['price']?></b></p>
+                    <p><b>TALLA : <?php echo $row['size']?></b></p>
                     <p></p>
-                    <p><a href="" class="vermas">AÑADIR</a></p>
+                    <p><a href="#" class="vermas">AÑADIR</a></p>
                 </div>
                
                 <div>
@@ -149,8 +195,13 @@
                 
                 <p>
                     
-                    <a href="#" class="msg"><span class="icon-mail"></span>DESPACHO GRATUITO</p>
+                <a href="#" class="msg"><span class="icon-mail"></span>DESPACHO GRATUITO</p>
             </div>
+            
+            <?php
+            }
+            ?>
+
         </div>
 
     </main>

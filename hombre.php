@@ -71,24 +71,24 @@
                 <div class="linksnavmain">
                     <ul class="submenu">
                         <li>
-                            <a href="hombre.php" class="linksnav">
+                            <a href="index.php" class="linksnav">
                                 <span class="icon-t-shirt"></span>
                                 CATEGORÍAS
                             </a>    
                             <ul>
-                                <li><a href="mujer.html">MUJER</a>
+                                <li><a href="#">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.php">BLUSAS</a></li>
-                                        <li><a href="mujer.php">PRENDA INFERIOR MUJER</a></li>
-                                        <li><a href="mujer.php">CALZADO MUJER</a></li>
-                                        <li><a href="mujer.php">VESTIDOS</a></li>
+                                        <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
+                                        <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=3">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
                                     </ul>                                
                                 </li>
-                                <li><a href="hombre.php">HOMBRE</a>
+                                <li><a href="#">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.php">CAMISAS</a></li>
-                                        <li><a href="hombre.php">CALZADO HOMBRE</a></li>
-                                        <li><a href="hombre.php">PRENDA INFERIOR HOMBRE</a></li>                                        
+                                        <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
+                                        <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php?idcategoria=7">PRENDA INFERIOR HOMBRE</a></li>                                        
                                     </ul>                                
                                 </li>                                
                             </ul>
@@ -108,9 +108,37 @@
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.php" class="linksnav">
+                            <a href=<?php 
+                            
+                            if(isset($_COOKIE["name"])){
+
+                                echo "logout.php";
+                            }
+
+                            else{
+
+                                echo "loginregistro.php";
+
+                            }
+        
+                            
+                            ?> 
+                            
+                            class="linksnav">
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+                                
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
                             </a>
                         </li>                                                                           
                     </ul>                
@@ -120,55 +148,51 @@
     </header>
     <main>
         <div class="subm">            
-                <a href="hombre.php" class="linkgeneral">
+                <a href="#" class="linkgeneral">
                     <P class="submujer">HOMBRE</P>
                 </a>
                 <div class="linksm">
-                    <a href="hombre.php" class="linkgeneral">
+                    <a href="hombre.php?idcategoria=5" class="linkgeneral">
                         <p class="subm1">Camisas</p>    
                     </a>
-                    <a href="hombre.php" class="linkgeneral">
+                    <a href="hombre.php?idcategoria=7" class="linkgeneral">
                         <p class="subm1">Prenda Inferior</p>
                     </a>
-                    <a href="hombre.php" class="linkgeneral">
+                    <a href="hombre.php?idcategoria=6" class="linkgeneral">
                         <p class="subm1">Calzado</p>
                     </a>
                 </div>
         </div>
         <div class="prendasme">
-            <div class="prendas">
-                <img src="images/ch1.jpg" class="p" />
-                <div class="esp">
-                    <h3>Camisa cuadros</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="images/ch4.jpg" class="p" />
-                <div class="esp">
-                    <h3>Tennis Verdes</h3>
-                    <P class="textp">Unidades:</P>
-                    <p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>            
-            <div class="prendas">
-                <img src="images/jeans.jpg" class="p" />
-                <div class="esp">
-                    <h3>vestido</h3>
-                    <P class="textp">Unidades: </P>
-                    <p></p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="images/camisagrise.jpg" class="p" />
-                <div class="esp">
-                    <h3>zapatos</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="prendas.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-        </div>
+
+<?php
+
+    $id_categoria=$_GET['idcategoria'];
+    include("conexion.php");
+    /* Se realiza la consulta adecuada */
+    $result = mysqli_query($con, "SELECT id_product,products.name,price,size,quantity,image,categorias.name as categoria from products
+    inner join categorias on products.categoria_id_categoria=categorias.id_categoria where categoria_id_categoria='$id_categoria'");
+
+    $num = mysqli_num_rows($result);
+    for ($i = 0; $i < $num; $i++) {
+        $row = mysqli_fetch_assoc($result);
+?>
+
+<div class="prendas">
+    <img src="images/<?php echo $row['image']?>" class="p" />
+    <div class="esp">
+        <h3><?php echo $row['name']?></h3>
+        <P class="textp">Unidades: <?php echo $row['quantity']?></P>
+        <p><a href="prendas.php?id_product=<?php echo $row['id_product']?>" class="vermas">VER MÁS</a></p>
+    </div>
+</div>
+
+<?php
+}
+?>
+
+
+</div>
     </main>
     <footer>
         <div class="footer">

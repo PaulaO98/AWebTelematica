@@ -85,19 +85,19 @@
                                 CATEGORÍAS
                             </a>    
                             <ul>
-                                <li><a href="mujer.php">MUJER</a>
+                                <li><a href="#">MUJER</a>
                                     <ul>
-                                        <li><a href="mujer.php">BLUSAS</a></li>
-                                        <li><a href="mujer.php">PRENDA INFERIOR MUJER</a></li>
-                                        <li><a href="mujer.php">CALZADO MUJER</a></li>
-                                        <li><a href="mujer.php">VESTIDOS</a></li>
+                                        <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
+                                        <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=3">CALZADO MUJER</a></li>
+                                        <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
                                     </ul>                                
                                 </li>
-                                <li><a href="hombre.html">HOMBRE</a>
+                                <li><a href="#">HOMBRE</a>
                                     <ul>
-                                        <li><a href="hombre.php">CAMISAS</a></li>
-                                        <li><a href="hombre.php">CALZADO HOMBRE</a></li>
-                                        <li><a href="hombre.php">PRENDA INFERIOR HOMBRE</a></li>                                        
+                                        <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
+                                        <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
+                                        <li><a href="hombre.php?idcategoria=7">PRENDA INFERIOR HOMBRE</a></li>                                        
                                     </ul>                                
                                 </li>                                
                             </ul>
@@ -117,9 +117,37 @@
                             </a>
                         </li>
                         <li>
-                            <a href="loginregistro.php" class="linksnav">
+                            <a href=<?php 
+                            
+                            if(isset($_COOKIE["name"])){
+
+                                echo "logout.php";
+                            }
+
+                            else{
+
+                                echo "loginregistro.php";
+
+                            }
+        
+                            
+                            ?> 
+                            
+                            class="linksnav">
                                 <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
+                                
+                                <?php
+                                    if(isset($_COOKIE["name"])){
+
+                                        echo $_COOKIE["name"];
+                                    }
+
+                                    else{
+
+                                        echo "LOGIN/REGISTRO";
+
+                                    }
+                                ?>
                             </a>
                         </li>                                                                           
                     </ul>                
@@ -132,43 +160,6 @@
         <div class="subm">
         <h1>BIENVENIDO MANUEL</h1>
     </div>
-    <div class="prendas">
-    <section class="container">
-
-        <div class="item"><h1>Mis Pedidos</h1></div>
-        <div class="item"></div>
-        <div class="item"align="right" ><h1>TOTAL PRODUCTOS = 2 $ 73.000 COP</h1></div>
-            
-    </section>
-
-    <HR size="5" width="100%" align="center">
-                         
-    <h2>Camisa polo</h2>
-    <img src="images/polo.jpeg"class="p" align="left"><h2>CAMISA DE HOMBRE Referencia A1 Talla L Color Blanco</h2> 
-    <section class="container">
-
-        <div class="item"><h2>Cantidad = 1</h2></div>
-        <div class="item"></div>
-        <div class="item"align="right" ><h1>$18.000 COP</h1></div>
-                     
-    </section>
-            
-    <br clear="left">    
-    </div>
-
-    <div class="prendas">
-    <h2>vestido largo</h2>
-    <img src="images/modelo.jpg"class="p" align="left"><h2>VESTIDO LARGO MUJER Referencia A2 Talla M Color Verde </h2>
-    <section class="container">
-
-        <div class="item"><h2>Cantidad = 1</h2></div>
-        <div class="item"></div>
-        <div class="item"align="right" ><h1>$55.000 COP</h1></div>
-                    
-                
-    </section>
-    <br clear="left">
-    </div>
            
     <div class="prendas">
                 
@@ -177,39 +168,31 @@
                     <tr>
                         <th scope="col">ID PEDIDO</th>
                         <th scope="col"> FECHA</th>
-                        <th scope="col"> VALOR TOTAL PEDIDO </th>
-                        <th scope="col"> DIRECCIÓN </th>
-                        <th scope="col">EMAIL</th>
-
+                        <th scope="col"> ESTADO </th>
+                        <th scope="col"> VER DETALLE </th>
                     </tr>
-
                 </thead>
-
                 <tbody id="lista">
                 <?php
-
                 include("conexion.php");
                 /* Se realiza la consulta adecuada */
-                $result = mysqli_query($con, "SELECT * FROM users");
+                $result = mysqli_query($con, "SELECT * FROM mispedidos");
                 $num=mysqli_num_rows($result);
                 for ($i=0; $i<$num; $i++){
                     $row = mysqli_fetch_assoc($result); 
                     ?>
                     <tr>
                         <th scope="row">
-                            <?php echo $row['id_usuario'];?>
+                            <?php echo $row['id_pedido'];?>
                         </th>
                         <td>
-                            <?php echo $row['name'];?>
+                            <?php echo $row['create_date'];?>
                         </td>
                         <th scope="row">
-                            <?php echo $row['phone'];?>
+                            <?php echo $row['estado'];?>
                         </th>
-                        <td>
-                            <?php echo $row['address'];?>
-                        </td>
-                        <th scope="row">
-                            <?php echo $row['email'];?>
+                        <th>
+                            <a href=""></a>
                         </th>
 
                     </tr>

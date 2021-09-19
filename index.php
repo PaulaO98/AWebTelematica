@@ -111,7 +111,7 @@
                                 CATEGORÍAS
                             </a>    
                             <ul>
-                                <li><a href="mujer.php">MUJER</a>
+                                <li><a href="#">MUJER</a>
                                     <ul>
                                         <li><a href="mujer.php?idcategoria=1">BLUSAS</a></li>
                                         <li><a href="mujer.php?idcategoria=2">PRENDA INFERIOR MUJER</a></li>
@@ -119,7 +119,7 @@
                                         <li><a href="mujer.php?idcategoria=4">VESTIDOS</a></li>
                                     </ul>                                
                                 </li>
-                                <li><a href="hombre.php">HOMBRE</a>
+                                <li><a href="#">HOMBRE</a>
                                     <ul>
                                         <li><a href="hombre.php?idcategoria=5">CAMISAS</a></li>
                                         <li><a href="hombre.php?idcategoria=6">CALZADO HOMBRE</a></li>
