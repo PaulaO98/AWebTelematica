@@ -1,3 +1,11 @@
+<?php
+
+    if(isset($_COOKIE["Token"]) && $_COOKIE["name"]=="Admin")
+        header("Location: usuariosadmin.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

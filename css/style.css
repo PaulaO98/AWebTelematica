@@ -21,6 +21,7 @@ main {
 footer {
   width: 100%;
   height: auto;
+  position: static;
 }
 
 .logo {
@@ -185,10 +186,10 @@ header.contenedorDesktop {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.active,
+/* .active,
 .dot:hover {
   background-color: #5656566b;
-}
+} */
 
 /* Fading animation */
 .fade {
@@ -346,7 +347,7 @@ p {
 /* PAGINA MUJER */
 .subm {
   position: fixed;
-  position: table;
+  /* position: table; */
   margin-top: 10px;
   top: 45px;
   display: flex;
@@ -356,6 +357,7 @@ p {
   background-color: #ccc;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1;
 }
 
 .submujer {
@@ -490,6 +492,18 @@ ol {
   padding: 0.5rem 0 0.5rem 0;
 }
 
+.addproduct{
+
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  background-color: #000;
+  border-radius: 1rem;
+  margin-left: 4rem;
+  position: absolute;
+  bottom: 48rem;
+}
+
 /*Tamaño pantallas*/
 
 @media screen and (min-width: 768px) {
@@ -519,6 +533,8 @@ ol {
   .subm1 {
     font-size: 1rem;
   }
+
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -549,7 +565,10 @@ ol {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 6rem;
+
+  margin-top: 3rem;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
 table {

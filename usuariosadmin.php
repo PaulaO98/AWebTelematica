@@ -1,3 +1,11 @@
+<?php
+
+    if(!isset($_COOKIE["Token"]))
+        header("Location: loginregistro.php");
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,46 +28,17 @@
                 <a href="index.php">
                     <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
-                <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="icon-menu"></span>
-                </button>
-                <div class="menumain" id="menum">
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a class="menulink" aria-current="page" href="index.php">
-                                <span class="icon-home"></span>
-                                HOME
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menulink" href="categorias.html">
-                                <span class="icon-t-shirt"></span>
-                                CATEGORÍAS
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menulink" href="mispedidos.html">
-                                <span class="icon-clipboard"></span>
-                                MIS PEDIDOS
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menulink" href="carrocompras.html">
-                                <span class="icon-carro"></span>
-                                COMPRAR
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menulink" href="loginregistro.html">
-                                <span class="icon-user1"></span>
-                                LOGIN/REGISTRO
-                            </a>
-                        </li>
-                    </ul>
+                <div class="linksnavmain" style="display:flex;justify-content:end">
+
+                    <a href="logout.php" class="linksnav">
+                        <span class="icon-user"></span>
+                        ADMIN
+                        <span class="icon-salir"></span>
+                    </a>
                 </div>
+
             </div>
+
             <div class="contenedorDesktop">
                 <div class="resp">
                     <a href="index.php">
@@ -68,7 +47,7 @@
                 </div>
                 <div class="linksnavmain">
 
-                    <a href="index.php" class="linksnav">
+                    <a href="logout.php" class="linksnav">
                         <span class="icon-user"></span>
                         ADMIN
                         <span class="icon-salir"></span>
@@ -85,13 +64,13 @@
                 <P class="submujer">ADMIN</P>
             </a>
             <div class="linksm ">
-                <a href="inventarioadmin.html" class="linkgeneral">
+                <a href="pedidosadmin.php" class="linkgeneral">
                     <p class="subm1">Pedidos</p>
                 </a>
-                <a href="inventarioadmin.html" class="linkgeneral">
-                    <p class="subm1">Inventario</p>
+                <a href="inventarioadmin.php" class="linkgeneral">
+                    <p class="subm1">Inventario Productos</p>
                 </a>
-                <a href="usuariosadmin.html" class="linkgeneral active">
+                <a href="usuariosadmin.php" class="linkgeneral active">
                     <p class="subm1">Usuarios</p>
                 </a>
             </div>

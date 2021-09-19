@@ -3,7 +3,7 @@
 <?php
 
     if(!isset($_COOKIE["Token"]))
-    header("Location: loginregistro.php");
+        header("Location: loginregistro.php");
     
 ?>
 

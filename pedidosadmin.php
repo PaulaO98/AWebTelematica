@@ -60,7 +60,7 @@
 
     
         <div class="subm">
-            <a href="usuariosadmin.php" class="linkgeneral">
+            <a href="admin.html" class="linkgeneral">
                 <P class="submujer">ADMIN</P>
             </a>
             <div class="linksm ">
@@ -75,18 +75,15 @@
                 </a>
             </div>
         </div>
-
-        <a href="addproduct.php" class="addproduct">Agregar Producto</a>
-            
         <div class="tabla">
-            <table border="1px">
+            <table >
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col"> Nombre Producto</th>
-                        <th scope="col"> Precio </th>
-                        <th scope="col"> Cantidad </th>
-                        <th scope="col">Categoria</th>
+                        <th scope="col"> NOMBRE USUARIO </th>
+                        <th scope="col"> TELEFONO </th>
+                        <th scope="col"> DIRECCIÓN </th>
+                        <th scope="col">EMAIL</th>
 
                     </tr>
 
@@ -97,28 +94,26 @@
 
                 include("conexion.php");
                 /* Se realiza la consulta adecuada */
-                $result = mysqli_query($con, "SELECT id_product,products.name,price,size,quantity,image,categorias.name as categoria from products
-                inner join categorias on products.categoria_id_categoria=categorias.id_categoria");
-
+                $result = mysqli_query($con, "SELECT * FROM users");
                 $num=mysqli_num_rows($result);
                 for ($i=0; $i<$num; $i++){
                     $row = mysqli_fetch_assoc($result); 
                     ?>
                     <tr>
                         <th scope="row">
-                            <?php echo $row['id_product'];?>
+                            <?php echo $row['id_usuario'];?>
                         </th>
                         <td>
                             <?php echo $row['name'];?>
                         </td>
                         <th scope="row">
-                            <?php echo $row['price'];?>
+                            <?php echo $row['phone'];?>
                         </th>
                         <td>
-                            <?php echo $row['quantity'];?>
+                            <?php echo $row['address'];?>
                         </td>
                         <th scope="row">
-                            <?php echo $row['categoria'];?>
+                            <?php echo $row['email'];?>
                         </th>
 
                     </tr>
