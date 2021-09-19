@@ -17,7 +17,7 @@
     <header class="paginageneral">
         <nav>
             <div class="contenedormovil">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                 </a>
                 <button class="menu-button" id="menubutton" type="button" data-bs-toggle="collapse"
@@ -28,7 +28,7 @@
                 <div class="menumain" id="menum">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a class="menulink" aria-current="page" href="index.html">
+                            <a class="menulink" aria-current="page" href="index.php">
                                 <span class="icon-home"></span>
                                 HOME
                             </a>
@@ -62,13 +62,13 @@
             </div>
             <div class="contenedorDesktop">
                 <div class="resp">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="Images/logoempresa.jpeg" alt="logoempresa" class="logo" />
                     </a>
                 </div>
                 <div class="linksnavmain">
 
-                    <a href="index.html" class="linksnav">
+                    <a href="index.php" class="linksnav">
                         <span class="icon-user"></span>
                         ADMIN
                         <span class="icon-salir"></span>
@@ -79,7 +79,7 @@
     </header>
     <main>
 
-    <?php include("conexion.php"); ?>
+    
         <div class="subm">
             <a href="admin.html" class="linkgeneral">
                 <P class="submujer">ADMIN</P>
@@ -111,9 +111,11 @@
                 </thead>
 
                 <tbody id="lista">
-                    <?php
+                <?php
+
+                include("conexion.php");
                 /* Se realiza la consulta adecuada */
-                $result = mysqli_query($link, "SELECT * FROM users");
+                $result = mysqli_query($con, "SELECT * FROM users");
                 $num=mysqli_num_rows($result);
                 for ($i=0; $i<$num; $i++){
                     $row = mysqli_fetch_assoc($result); 

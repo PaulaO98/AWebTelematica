@@ -22,8 +22,8 @@
         $names[]=$data['name'];
     }
 
-    print_r($passwords);
-    print_r($names);
+    // print_r($passwords);
+    // print_r($names);
 
     foreach ($passwords as $pass) {
         # code...
