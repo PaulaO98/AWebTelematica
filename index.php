@@ -217,39 +217,31 @@
             </div>            
         </div>
         <div class="prendasme">
-            <div class="prendas">
-                <img src="images/zapatosca.jpg" class="p"/>
-                <div class="esp">
-                    <h3>Zapato Café</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="hombre.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="images/jeans.jpg" class="p" />
-                <div class="esp">
-                    <h3>Jeans</h3>
-                    <P class="textp">Unidades: </P>
-                    <p></p><a href="mujer.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>
-            <div class="prendas">
-                <img src="images/blusarosa.jpg" class="p" />
-                <div class="esp">
-                    <h3>Blusa Rosa</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="mujer.php" class="vermas">VER MÁS</a></p>
-                </div>
-            </div>          
-            <div class="prendas">
-                <img src="images/tillanegra.jpg" class="p" />
-                <div class="esp">
-                    <h3>Tennis Negros</h3>
-                    <P class="textp">Unidades: </P>
-                    <p><a href="mujer.php" class="vermas">VER MÁS</a></p>
-                </div>
+        <?php
 
+           
+            include("conexion.php");
+            /* Se realiza la consulta adecuada */
+            $result = mysqli_query($con, "SELECT id_product,products.name,price,size,quantity,image,categorias.name as categoria from products
+            inner join categorias on products.categoria_id_categoria=categorias.id_categoria limit 6");
+
+            $num = mysqli_num_rows($result);
+            for ($i = 0; $i < $num; $i++) {
+                $row = mysqli_fetch_assoc($result);
+            ?>
+
+            <div class="prendas">
+            <img src="images/<?php echo $row['image']?>" class="p" />
+            <div class="esp">
+                <h3><?php echo $row['name']?></h3>
+                <P class="textp">Unidades: <?php echo $row['quantity']?></P>
+                <p><a href="prendas.php?id_product=<?php echo $row['id_product']?>" class="vermas">VER MÁS</a></p>
             </div>
+            </div>
+
+            <?php
+            }
+            ?>
         </div>
     </main>
 
